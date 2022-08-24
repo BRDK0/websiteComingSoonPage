@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang = en>
+    <style>
+
+    div.absolute {
+      position: absolute;
+         width: 50%;
+         bottom: 10px;
+         
+} 
+        p {
+          text-align: center;
+          font-size: 60px;
+          margin-top: 10px;
+        }
+    
+         body {
+    padding: 10%;    
+    background-image: url('beautiful-shot-huge-rhinoceros-with-blurred-background.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+   }
+
+   img{ 
+    
+    
+    display: block;
+    margin: 0 auto;
+   width: 90%;
+    max-width: 150px;
+    min-width: 80px;
+   }
+
+   h1 {text-align: center;}
+   
+   
+
+    body {
+        padding-top: 100px;
+        max-width: 100%;
+        height: auto;
+    }
+        </style>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Coming Soon page</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+      </head>
+        <div class="jumbotron text-center">
+
+        </div>
+    <body>
+    <div class="container " style="background-color: rgba(0,0,0,0.2); padding: 27px; border-radius: 20px; text-align: center;">
+
+        <div class="row ">
+                <div>
+                    <font style="font-family:Consolas, monaco, monospace; color: white; text-shadow:2px 2px #000000 ; font-size: 60px" >Coming Soon</font>
+                </div>      
+            
+        </div>
+        <p id="demo" style="color: white; text-shadow: 2px 2px #000000;"></p>
+        <div class="row align-items-end" style="vertical-align:bottom">
+            <div class="col-sm-4 text-center">                
+                
+                
+                    <img src="Valley Crag logo (CMYK- transparent background).png" alt="text describing the image">
+                    
+                
+            </div>
+            <div class="col-sm-4 " >
+                <a href="https://rrzsa.com" class="GFG">
+                    <img src="Powered by RRZ.png" alt="Screenshot 2022-08-23 08.45.10" >
+                </a>
+                
+            </div>  
+            <div class="col-sm-4">
+                
+                <img src="MicrosoftTeams-image - 2022-08-23T113936.768.png" alt="Screenshot 2022-08-23 08.45.10" >
+            </div>        
+               
+            
+        </div>
+    </div>
+
+
+
+<script >
+// Set the date we're counting down to
+var countDownDate = new Date("September 24, 2022 9:56:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML =  days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "Timer be done yo";
+  }
+}, 1000);
+</script>
+
+</body>
+
+
+</html>
